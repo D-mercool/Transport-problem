@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Transport</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <table>
+            <tr class = 'post'>
+                <th>Потр.\Пост.</th>
+                <th>Поставщик 1</textarea></th>
+                <th>Поставщик 2</th>
+                <!--<th> Поставщик 3</th>-->
+                <th>&nbsp; &nbsp;Нужды&nbsp; &nbsp;</th>
+            </tr> <!--ряд с ячейками заголовков-->
+
+            <tr>
+                <td class = 'potr'><!--<b>Потребитель 1</b>--><input type="text" value='Потребитель 1' class='name'></td>
+                <td><input type="text" placeholder="Цена" class='cost'><input type="text" class='value' readonly></td>
+                <td><input type="text" placeholder="Цена" class='cost'><input type="text" class='value' readonly></td>
+                <td><input type="text" placeholder="Кол-во" class = 'need'></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+            <tr>
+                <td class = 'potr'><!--<b>Потребитель 2</b>--><input type="text" value='Потребитель 2' class='name'></td>
+                <td><input type="text" placeholder="Цена"  class='cost'><input type="text" class='value' readonly></td>
+                <td><input type="text" placeholder="Цена"  class='cost'><input type="text" class='value' readonly></td>
+                <td><input type="text" placeholder="Кол-во" class = 'need'></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+            <tr>
+                <td class = 'potr'><b>Запасы</b></td>
+                <td><input type="text" placeholder="Кол-во" class = 'reserve'></td>
+                <td><input type="text" placeholder="Кол-во" class ='reserve'></td>
+                <td class = 'sum'><label id = 'sum'>Сумма = </label></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+        </table>
+
+        <ul>
+            <li><button id = 'btn' class = 'btn'>Построить оптимальный план</button></li>
+            <li><button id = 'addPotr' class = 'btn'>Добавить потребителя</button></li>
+            <li><button id = 'addPost' class = 'btn'>Добавить поставщика</button></li>
+        </ul>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
